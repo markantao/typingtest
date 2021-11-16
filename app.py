@@ -11,9 +11,11 @@ def start_screen(stdscr):
 def wpm_test(stdscr):
     target_text = "Hello World, this is an example text!"
     current_text = []
+
     stdscr.clear()
     stdscr.addstr(target_text)
     stdscr.refresh()
+    stdscr.getkey()
 
 
 def main(stdscr):
