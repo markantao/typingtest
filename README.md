@@ -23,6 +23,6 @@ The algorithm goes as follows:
 
 ***wpm = round((len(current_text) / (time_elapsed / 60)) / 5)***
 
-This algorithm takes the number of characters that the user types _(len(current\_\text))_, and divides it by the time elapsed of the users typing divided by 60 as there are 60 seconds in a minute _(time\_\elapsed / 60)_. It then takes this value and divides it by 5 as the average word is 5 letters. _) / 5)_
+This algorithm takes the number of characters that the user types _(len(current\_text))_, and divides it by the time elapsed of the users typing divided by 60 as there are 60 seconds in a minute _(time\_elapsed / 60)_. It then takes this value and divides it by 5 as the average word is 5 letters. _) / 5)_
 
 This is an overview of what I learned through building this project.
