@@ -2,6 +2,7 @@
 import curses
 from curses import wrapper
 import time
+import random
 
 #Starting Screen
 def start_screen(stdscr):
@@ -26,10 +27,15 @@ def display_text(stdscr, target, current, wpm=0):
             color = curses.color_pair(2)
         stdscr.addstr(0, i, char, color)
 
+# Choosing different texts
+def load_text():
+    with open("randomtext.txt", "r") as f:
+        lines = f.readlines()
+        return random.choice(lines).strip() #.strip removes the "\n" from the .txt file
 
 #Typing Screen
 def wpm_test(stdscr):
-    target_text = "Hello World, this is an example text!"
+    target_text = load_text()
     current_text = []
     wpm = 0
     start_time = time.time()
@@ -91,7 +97,7 @@ def main(stdscr):
     start_screen(stdscr)
     while True:
         wpm_test(stdscr)
-        stdscr.addstr(2, 0, "You completed the text! Press any key to continue")
+        stdscr.addstr(2, 0, "You completed the text! Press any key to restart game or escape to quit")
         key = stdscr.getkey()
         if ord(key) == 27:
             break

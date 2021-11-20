@@ -1,0 +1,5 @@
+Welcome back to another video! This is Mark Antao.
+What did u guys think of this project? Would you want to see a full tutorial on curses in the future?! 
+I was following along and really enjoyed the simplicity of what we are doing and learned alot.
+This was one of the best videos ever this is really awesome for beginners.
+Thanks a lot, I started learning Python several months ago and want to become a specialist.
