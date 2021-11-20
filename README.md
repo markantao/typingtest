@@ -26,3 +26,23 @@ The algorithm goes as follows:
 This algorithm takes the number of characters that the user types _(len(current\_text))_, and divides it by the time elapsed of the users typing divided by 60 as there are 60 seconds in a minute _(time\_elapsed / 60)_. It then takes this value and divides it by 5 as the average word is 5 letters. _) / 5)_
 
 This is an overview of what I learned through building this project.
+
+> **How to Run**
+This project is really fun to play around with as you can test your typing speed with multiple different text strings to use and it is really easy to use. Here is how to run it on your machine:
+
+***Prerequisites***
+- Python installed
+- Clone of this repository
+
+If you have everything checked above, you are ready to run this project! Open your terminal and cd into the directery containing the files used for this project (app.py, randomtext.txt). Next, based on your os, you will either run one of these two commands for mac or windows os.
+
+- ***python3 app.py*** - Mac
+- ***python app.py*** - Windows
+
+The game will startup and you can start playing! This is how you can run the project!
+Steps in order will be posted below to reference quickly:
+
+- Clone repository from [github repository](https://github.com/markantao/typingtest)
+- Open your terminal and cd into the directory containing the cloned files
+- Run one of the following commands listed above based on your OS
+- Have Fun!

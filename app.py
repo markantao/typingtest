@@ -9,6 +9,7 @@ def start_screen(stdscr):
     stdscr.clear()
     stdscr.addstr(0, 0, "Speed Typing Test")
     stdscr.addstr("\nBy: Mark Antao")
+    stdscr.addstr("\nPress Enter to Start!")
     stdscr.refresh()
     stdscr.getkey()
 
