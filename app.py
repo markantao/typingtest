@@ -52,6 +52,11 @@ def wpm_test(stdscr):
         display_text(stdscr, target_text, current_text, wpm)
         stdscr.refresh() # Refresh terminal to show changes
 
+        # Finishing the game
+        if "".join(current_text) == target_text:
+            stdscr.nodelay(False)
+            break
+
         #Making sure that line 57 won't crash, if it does, the continue keyword will bring us back 
         # to the start of the while loop and it skips from line 66 as you cannot check what key was
         # was pressed if no key was pressed. (Has no value)
@@ -84,7 +89,12 @@ def main(stdscr):
     curses.init_pair(3, curses.COLOR_WHITE, curses.COLOR_BLACK)
 
     start_screen(stdscr)
-    wpm_test(stdscr)
+    while True:
+        wpm_test(stdscr)
+        stdscr.addstr(2, 0, "You completed the text! Press any key to continue")
+        key = stdscr.getkey()
+        if ord(key) == 27:
+            break
 
 
 wrapper(main)
