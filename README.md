@@ -28,6 +28,7 @@ This algorithm takes the number of characters that the user types _(len(current\
 This is an overview of what I learned through building this project.
 
 > **How to Run**
+
 This project is really fun to play around with as you can test your typing speed with multiple different text strings to use and it is really easy to use. Here is how to run it on your machine:
 
 ***Prerequisites***
@@ -36,7 +37,7 @@ This project is really fun to play around with as you can test your typing speed
 
 If you have everything checked above, you are ready to run this project! Open your terminal and cd into the directery containing the files used for this project (app.py, randomtext.txt). Next, based on your os, you will either run one of these two commands for mac or windows os.
 
-- ***python3 app.py*** - Mac
+- ***python3 app.py*** - Mac and Linux
 - ***python app.py*** - Windows
 
 The game will startup and you can start playing! This is how you can run the project!
